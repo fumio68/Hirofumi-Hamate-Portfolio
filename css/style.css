@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: sans-serif, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic";
   font-size: 15px;
   line-height: 1.8;
   letter-spacing: .8px;
@@ -112,7 +112,8 @@ li {
 }
 
 .section-title {
-  font-family: "Open sans", sans-serif;
+  /* font-family: "Open sans", sans-serif; */
+  font-family: 'Itim', cursive;
   font-size: 40px;
   font-weight: normal;
   line-height: 1;
@@ -136,27 +137,41 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 86vh;
+  height: 80vh;
+}
+
+#header .inner{
+  display: flex;
+  align-items: center;
 }
 
 #header .logo {
   position: relative;
-  margin-bottom: 30px;
+  margin-top: 50px;
   text-align: center;
+  margin: 35px 20px 0 40px;
+
 }
 
 #header .logo-title {
-  font-family: "Open sans", sans-serif;
-  font-size: 64px;
+  /* font-family: "Open sans", sans-serif; */
+  font-family: 'Itim', cursive;
+  font-size: 80px;
   line-height: 1;
   letter-spacing: .2em;
 }
 
 #header .logo-desc {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 5px;
   text-align: center;
   letter-spacing: .2em;
+}
+
+#header img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 
 /*--------------------------------
@@ -186,7 +201,8 @@ li {
 }
 
 #gnav li {
-  font-family: "Open sans", sans-serif;
+  /* font-family: "Open sans", sans-serif; */
+  font-family: 'Itim', cursive;
   font-size: 16px;
   padding: 0 24px;
   letter-spacing: .05em;
@@ -524,6 +540,16 @@ li {
   #header {
     height: 70vh;
   }
+  
+  #header .inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #header .logo {
+    margin: 0 auto;
+  }
 
   #header .logo-title {
     font-size: 28px;
@@ -532,6 +558,13 @@ li {
 
   #header .logo-desc {
     font-size: 11px;
+    margin-bottom: 20px;
+  }
+
+
+  #header img {
+    width: 100px;
+    height: 100px;
   }
 
   #gnav {
