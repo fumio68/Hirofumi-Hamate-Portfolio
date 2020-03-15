@@ -259,17 +259,28 @@ li {
 }
 
 .card-caption-title {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   margin-top: 8px;
 }
 
 .card-caption-info {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .card-caption-url {
-  font-size: 10px;
+  font-size: 14px;
+  background-color: burlywood;
+  margin: 0 auto;
+  width: 100px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.url-link {
+  color: #fff;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .card img.fadein {
@@ -605,16 +616,32 @@ li {
   }
 
   .card-caption {
-    text-align: left;
+    /* text-align: left; */
   }
 
   .card-caption-title {
-    font-size: 10px;
+    font-size: 13px;
   }
+
+  .card-caption-info {
+    font-size: 12px;
+  }
+
+  .card-caption-url {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+
+
 
   #works .card:nth-child(2n+1):nth-last-child(-n+2),
   #works .card:nth-child(2n+1):nth-last-child(-n+2)~div {
     margin-bottom: 0;
+  }
+
+  #works .card-wrapper {
+    display: flex;
+    flex-direction: column;
   }
 
   #works .card {
