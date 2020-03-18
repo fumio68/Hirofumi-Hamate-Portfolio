@@ -23,9 +23,9 @@
   <div id="wrapper">
     <nav id="gnav" class="fixed">
       <ul>
+        <li><a href="#about">ABOUT ME</a></li>
         <li><a href="#works">WORKS</a></li>
-        <li><a href="#feature">FEATURE</a></li>
-        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#feature">MY FAVORITE</a></li>
         <li><a href="#skill">SKILL</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
@@ -54,7 +54,7 @@
           </div>
           <div class="section-body">
             <div class="section-image">
-              <img class="lazyload fadein" data-src="img/about/profile.jpg" alt="">
+              <img class="profile-image" src="img/about/profile.jpg" alt="">
             </div>
             <div class="section-desc">
               <div class="section-text">
@@ -92,34 +92,34 @@
           </div>
           <div class="section-body card-wrapper my-gallery">
             <div class="card">
-              <a href="img/works/work1.png" data-size="960x550" class="card-image hover-action-01">
-                <img class="lazyload fadein" src="img/works/work1.png" data-src="img/works/work1.png" alt="" />
+              <a href="https://thanks-journey.herokuapp.com/"  class="card-image hover-action-01" target="_blank">
+                <img class="lazyload fadein" src="img/works/work1.png" alt="" />
               </a>
-              <div class="card-caption">
+              <div class="card-caption card-space">
                 <div class="card-caption-title">Thanks Journey</div>
                 <div class="card-caption-info">
                   日々の感謝を記録するためのメモアプリです。<br>初めての個人アプリとして開発しました。<br>
                   【使用技術】<br>
                   Haml / Sass / Ruby on Rails / jQuery / MySQL</div>
-                <a class="url-link" href="https://thanks-journey.herokuapp.com/" target="_blank"> <div class="card-caption-url">Link</div></a>
+                  <a class="url-link" href="https://thanks-journey.herokuapp.com/" target="_blank"> <div class="card-caption-url">Link</div></a>
               </div>
             </div>
             <div class="card">
-              <a href="img/works/work3.png" data-size="960x550" class="card-image hover-action-01">
-                <img class="lazyload fadein" src="img/works/work3.png" data-src="img/works/work3.png" alt="" />
+              <a href="http://18.178.119.194//" class="card-image hover-action-01" target="_blank">
+                <img class="lazyload fadein" src="img/works/work3.png" alt="" />
               </a>
-              <div class="card-caption">
+              <div class="card-caption card-space">
                 <div class="card-caption-title">FURIMA</div>
                 <div class="card-caption-info">スクールでチーム開発したフリマアプリです。<br>
                 私はスクラムマスターとして開発に携わりました。<br>
                 【使用技術】<br>
                 Haml / Sass / Ruby on Rails / jQuery / MySQL
                 </div>
-                <a class="url-link" href="http://18.178.119.194//" target="_blank"><div class="card-caption-url">Link</div></a>
+                <a class="url-link" href="http://18.178.119.194//" target="_blank"> <div class="card-caption-url">Link</div></a>
               </div>
             </div>
             <div class="card">
-              <a href="img/works/work2.png" data-size="960x550" class="card-image hover-action-01">
+              <a href="http://18.178.50.239/" class="card-image hover-action-01" target="_blank">
                 <img class="lazyload fadein" src="img/works/work2.png" data-src="img/works/work2.png" alt="" />
               </a>
               <div class="card-caption">
@@ -129,7 +129,7 @@
                 【使用技術】<br>
                 Haml / Sass / Ruby on Rails / jQuery / MySQL
                 </div>
-                <a class="url-link" href="http://18.178.50.239/" target="_blank"><div class="card-caption-url">Link</div></a>
+                <a class="url-link" href="http://18.178.50.239/" target="_blank"> <div class="card-caption-url">Link</div></a>
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@
             <div class="section-desc">
               <div class="section-text">
               <span class="text-bold">URL：</span><br>
-               <a href="https://thanks-journey.herokuapp.com/"
+              <a href="https://thanks-journey.herokuapp.com/"
                   target="_blank">https://thanks-journey.herokuapp.com/</a><br><br>
                 <span class="text-bold">テーマ：</span><br>日々の生活の中の感謝を記録していくアプリ<br><br>
                 <span class="text-bold">作った目的：</span><br>初めての個人アプリで、「せっかく作るなら人を幸せにするアプリを作りたい」と考えて作成しました。<br>
@@ -342,73 +342,6 @@
     </footer>
   </div>
 
-
-  <!-- Root element of PhotoSwipe. Must have class pswp. -->
-  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe.
-           It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-      <!-- Container that holds slides.
-              PhotoSwipe keeps only 3 of them in the DOM to save memory.
-              Don't modify these 3 pswp__item elements, data is added later on. -->
-      <div class="pswp__container">
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-      </div>
-
-      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-      <div class="pswp__ui pswp__ui--hidden">
-
-        <div class="pswp__top-bar">
-
-          <!--  Controls are self-explanatory. Order can be changed. -->
-
-          <div class="pswp__counter"></div>
-
-          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-
-
-          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-          <!-- element will get class pswp__preloader--active when preloader is running -->
-          <div class="pswp__preloader">
-            <div class="pswp__preloader__icn">
-              <div class="pswp__preloader__cut">
-                <div class="pswp__preloader__donut"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-          <div class="pswp__share-tooltip"></div>
-        </div>
-
-        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-        </button>
-
-        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-        </button>
-
-        <div class="pswp__caption">
-          <div class="pswp__caption__center"></div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type='text/javascript' src="js/photoswipe/photoswipe.min.js"></script>
   <script type='text/javascript' src="js/photoswipe/photoswipe-ui-default.js"></script>
