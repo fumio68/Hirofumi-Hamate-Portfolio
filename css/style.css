@@ -519,6 +519,10 @@ li {
   text-align: center;
 }
 
+#contact a {
+  padding: 0 15px;
+}
+
 .twitter-box{
   width: 35%;
   margin: 0 auto;
@@ -968,3 +972,5 @@ li {
       opacity: 0;
   }
 }
+
+
