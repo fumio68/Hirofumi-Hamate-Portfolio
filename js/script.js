@@ -47,7 +47,7 @@ $(function () {
       } else {
         $("div",this).css("opacity","0" );
       }
-      if (scroll < imgPos - windowHeight + windowHeight/10d){
+      if (scroll < imgPos - windowHeight + windowHeight/10){
         $("div",this).removeClass("fade-in-bottom");
       } else {
         $("div",this).css("opacity","1" );

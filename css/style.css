@@ -306,19 +306,7 @@ li {
   opacity: 0.8;
   color: rgb(40, 126, 207);
 }
-/* 
-.card img.fadein {
-  -webkit-transition: 1.5s;
-  -moz-transition: 1.5s;
-  -ms-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
-  opacity: 0;
-}
 
-.card img.fadein.lazyloaded {
-  opacity: 1;
-} */
 
 /*--------------------------------
  WORKS
