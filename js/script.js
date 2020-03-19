@@ -1,4 +1,4 @@
-// PhotoSwipe
+PhotoSwipe
 initPhotoSwipeFromDOM('.my-gallery');
 
 $(function () {
@@ -30,6 +30,29 @@ $(function () {
       scrollTop: 0
     }, 300);
     return false;
+  });
+
+  $('.section div').css({
+    "opacity":"0",
+    "transform":"translateY(50%)",
+    "-ms-transform":"translateY(50%)"
+  });
+  $(window).scroll(function (){
+    $(".section").each(function(){
+      var imgPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > imgPos - windowHeight + windowHeight/2){
+        $("div",this).addClass("fade-in-bottom");
+      } else {
+        $("div",this).css("opacity","0" );
+      }
+      if (scroll < imgPos - windowHeight + windowHeight/10){
+        $("div",this).removeClass("fade-in-bottom");
+      } else {
+        $("div",this).css("opacity","1" );
+      }
+    });
   });
 
 });

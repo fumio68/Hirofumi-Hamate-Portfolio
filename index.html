@@ -10,7 +10,6 @@
   <meta property="og:image" content="img/ogp.png">
   <meta name="description" content="Hirofumi Hamate(fumio)のポートフォリオサイトです。フロントエンドエンジニアを目指して就活中！" />
   <title>fumio's ポートフォリオ</title>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Itim&display=swap" rel="stylesheet">
   <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
   <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
@@ -24,38 +23,43 @@
   <div id="wrapper">
     <nav id="gnav" class="fixed">
       <ul>
+        <li><a href="#about">ABOUT ME</a></li>
         <li><a href="#works">WORKS</a></li>
-        <li><a href="#feature">FEATURE</a></li>
-        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#feature">MY FAVORITE</a></li>
         <li><a href="#skill">SKILL</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
     <header id="header">
-      <div class="inner">
-        <h1 class="logo">
-          <div class="logo-title focus-in-contract">fumio's</div>
-          <div class="logo-desc focus-in-contract2">PORTFOLIO</div>
-        </h1>
-        <img class="roll-in-blurred-right" src="img/hero.jpeg" alt="自画像">
+      <div class="hero-image fade-in">
+        <div class="img-mask">
+        </div>
       </div>
+        <div class="inner">
+          <h1 class="logo">
+            <div class="logo-title focus-in-contract">fumio's</div>
+            <div class="logo-desc focus-in-contract2">PORTFOLIO</div>
+          </h1>
+          <img class="roll-in-blurred-right" src="img/icon.jpeg" alt="自画像">
+        </div>
     </header>
     <main id="contents">
       <section class="section" id="about">
         <div class="inner">
           <div class="section-title-area">
             <h2 class="section-title">ABOUT ME</h2>
-            <div class="section-intro">
+            <span id="ityped" class="ityped"></span>
+            <!-- <div class="section-intro">
               思いを形にして伝えるエンジニアを目指して学習・就活中です！
-            </div>
+            </div> -->
           </div>
           <div class="section-body">
             <div class="section-image">
-              <img class="lazyload fadein" data-src="img/about/profile.jpg" alt="">
+              <img class="profile-image" src="img/about/profile.jpg" alt="">
             </div>
             <div class="section-desc">
               <div class="section-text">
-                はじめまして！　fumioこと濱手 裕史（はまて ひろふみ）といいます。<br><br>
+                はじめまして！　fumioといいます。<br><br>
                 【経歴】<br>
                 ・千葉大学教育学部 小学校教員養成課程卒業<br>
                 ・千葉県四街道市役所勤務（広報担当）。2019年12月に退職<br>
@@ -89,36 +93,35 @@
           </div>
           <div class="section-body card-wrapper my-gallery">
             <div class="card">
-              <a href="img/works/work1.png" data-size="960x550" class="card-image hover-action-01">
-                <img class="lazyload fadein" src="img/works/work1.png" data-src="img/works/work1.png" alt="" />
-              </a>
-              <div class="card-caption">
+              <!-- <a href="https://thanks-journey.herokuapp.com/"  class="card-image hover-action-01" target="_blank"> -->
+                <img class="lazyload fadein" src="img/works/work1.png" alt="" />
+              <!-- </a> -->
+              <div class="card-caption card-space">
                 <div class="card-caption-title">Thanks Journey</div>
                 <div class="card-caption-info">
                   日々の感謝を記録するためのメモアプリです。<br>初めての個人アプリとして開発しました。<br>
                   【使用技術】<br>
                   Haml / Sass / Ruby on Rails / jQuery / MySQL</div>
-                <a class="url-link" href="https://thanks-journey.herokuapp.com/" target="_blank"> <div class="card-caption-url">Link</div></a>
+                  <a class="url-link" href="https://thanks-journey.herokuapp.com/" target="_blank"> <div class="card-caption-url">Link</div></a>
               </div>
             </div>
             <div class="card">
-              <a href="img/works/work3.png" data-size="960x550" class="card-image hover-action-01">
-                <img class="lazyload fadein" src="img/works/work3.png" data-src="img/works/work3.png" alt="" />
-              </a>
-              <div class="card-caption">
+              <!-- <a href="http://18.178.119.194//" class="card-image hover-action-01" target="_blank"> -->
+                <img class="lazyload fadein" src="img/works/work3.png" alt="" />
+              <!-- </a> -->
+              <div class="card-caption card-space">
                 <div class="card-caption-title">FURIMA</div>
                 <div class="card-caption-info">スクールでチーム開発したフリマアプリです。<br>
                 私はスクラムマスターとして開発に携わりました。<br>
                 【使用技術】<br>
                 Haml / Sass / Ruby on Rails / jQuery / MySQL
                 </div>
-                <a class="url-link" href="http://18.178.119.194//" target="_blank"><div class="card-caption-url">Link</div></a>
+                <a class="url-link" href="http://18.178.119.194//" target="_blank"> <div class="card-caption-url">Link</div></a>
               </div>
             </div>
             <div class="card">
-              <a href="img/works/work2.png" data-size="960x550" class="card-image hover-action-01">
+              <!-- <a href="http://18.178.50.239/" class="card-image hover-action-01" target="_blank"> -->
                 <img class="lazyload fadein" src="img/works/work2.png" data-src="img/works/work2.png" alt="" />
-              </a>
               <div class="card-caption">
                 <div class="card-caption-title">ChatSpace</div>
                 <div class="card-caption-info">スクールで開発したチャットアプリです。<br>
@@ -126,7 +129,7 @@
                 【使用技術】<br>
                 Haml / Sass / Ruby on Rails / jQuery / MySQL
                 </div>
-                <a class="url-link" href="http://18.178.50.239/" target="_blank"><div class="card-caption-url">Link</div></a>
+                <a class="url-link" href="http://18.178.50.239/" target="_blank"> <div class="card-caption-url">Link</div></a>
               </div>
             </div>
           </div>
@@ -150,7 +153,7 @@
             <div class="section-desc">
               <div class="section-text">
               <span class="text-bold">URL：</span><br>
-               <a href="https://thanks-journey.herokuapp.com/"
+              <a href="https://thanks-journey.herokuapp.com/"
                   target="_blank">https://thanks-journey.herokuapp.com/</a><br><br>
                 <span class="text-bold">テーマ：</span><br>日々の生活の中の感謝を記録していくアプリ<br><br>
                 <span class="text-bold">作った目的：</span><br>初めての個人アプリで、「せっかく作るなら人を幸せにするアプリを作りたい」と考えて作成しました。<br>
@@ -178,7 +181,7 @@
         </div>
       </section>
 
-      <section class="section" id="skill">
+      <section class="section fixed-bg bg02" id="skill">
         <div class="inner">
           <div class="section-title-area">
             <h2 class="section-title">SKILL</h2>
@@ -231,12 +234,12 @@
                 <img src="img/skill/skill4.png" alt="">
               </div>
               <div class="skill-desc">
-                <h3 class="skill-desc-title">Ruby / ruby on rails</h3>
+                <h3 class="skill-desc-title">Ruby / Ruby on Rails</h3>
                 <div class="rating">
                   <div class="rate rate4"></div>
                 </div>
                 <div class="section-text">
-                  スクールでは一貫してruby on railsでのアプリ開発をしていたため、基本的なアプリ開発が可能です。</div>
+                  スクールでは一貫してRuby on Railsでのアプリ開発をしていたため、基本的なアプリの開発が可能です。</div>
               </div>
             </div>
             <div class="card">
@@ -249,7 +252,7 @@
                   <div class="rate rate3"></div>
                 </div>
                 <div class="section-text">
-                  基本的なバージョン管理やGitHub DeskTopを使った操作を行えます。また、GitHubを使ったチーム開発の経験もあります。
+                  基本的なバージョン管理やGitHub Desktopを使った操作を行えます。また、GitHubを使ったチーム開発の経験もあります。
                 </div>
               </div>
             </div>
@@ -297,7 +300,7 @@
                     <div class="rate rate1"></div>
                   </div>
                   <div class="section-text">
-                    UIのパーツ作成のためのライブラリを学んでいきます。大規模開発にも対応できるReact.jsに注目しています。</div>
+                    UIのパーツ作成のためのライブラリを学んでいきます。大規模開発にも対応できるReact.jsの学習を始めました。</div>
                 </div>
               </div>
             </div>
@@ -312,12 +315,14 @@
           <div class="section-title-area">
             <h2 class="section-title">CONTACT</h2>
             <div class="section-intro">
-              お問い合わせは、Twitterかメールでお願いいたします。
+              お問い合わせは、Twitterかメールでお願いいたします。<br>
+              また、GitHubでポートフォリオや学習内容を公開しています。
             </div>
           </div>
           <div class="section-body contact-wrapper">
             <div class="contact">
               <a href="https://twitter.com/fumio681" target="_blank"><img src="img/contact/icon_tw.png" alt=""></a>
+              <a href="https://github.com/fumio68" target="_blank"><img src="img/skill/skill5.png" alt=""></a>
               <div class="twitter-box">
                 <a class="twitter-timeline" data-height="315" href="https://twitter.com/fumio681?ref_src=twsrc%5Etfw">Tweets by fumio681</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
@@ -334,83 +339,17 @@
         </div>
       </div>
       <div class="inner">
-        <div class="copyright">Copyright&copy;Hirofumi Hamate. All Rights Reserved.</br>
+        <div class="copyright">Copyright&copy;fumio. All Rights Reserved.</br>
         </div>
     </footer>
   </div>
 
-
-  <!-- Root element of PhotoSwipe. Must have class pswp. -->
-  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe.
-           It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-      <!-- Container that holds slides.
-              PhotoSwipe keeps only 3 of them in the DOM to save memory.
-              Don't modify these 3 pswp__item elements, data is added later on. -->
-      <div class="pswp__container">
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-      </div>
-
-      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-      <div class="pswp__ui pswp__ui--hidden">
-
-        <div class="pswp__top-bar">
-
-          <!--  Controls are self-explanatory. Order can be changed. -->
-
-          <div class="pswp__counter"></div>
-
-          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-
-
-          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-          <!-- element will get class pswp__preloader--active when preloader is running -->
-          <div class="pswp__preloader">
-            <div class="pswp__preloader__icn">
-              <div class="pswp__preloader__cut">
-                <div class="pswp__preloader__donut"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-          <div class="pswp__share-tooltip"></div>
-        </div>
-
-        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-        </button>
-
-        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-        </button>
-
-        <div class="pswp__caption">
-          <div class="pswp__caption__center"></div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type='text/javascript' src="js/photoswipe/photoswipe.min.js"></script>
   <script type='text/javascript' src="js/photoswipe/photoswipe-ui-default.js"></script>
   <script type='text/javascript' src="js/photoswipe/photoswipe_setup.js"></script>
-  <script type='text/javascript' src="js/lazysizes/lazysizes.min.js"></script>
   <script type='text/javascript' src="js/script.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/type.js"></script>
 </body>
 </html>
