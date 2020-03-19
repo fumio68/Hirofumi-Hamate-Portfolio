@@ -32,5 +32,22 @@ $(function () {
     return false;
   });
 
+  $('.section div').css({
+    "opacity":"0",
+    "transform":"translateY(50%)",
+    "-ms-transform":"translateY(50%)"
+  });
+  $(window).scroll(function (){
+    $(".section").each(function(){
+      var imgPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > imgPos - windowHeight + windowHeight/2){
+        $("div",this).addClass("fade-in-bottom");
+      } else {
+        $("div",this).css("opacity","0" );
+      }
+    });
+  });
 
 });
