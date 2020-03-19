@@ -146,15 +146,12 @@ li {
   background-position: center;
 }
 
-.hero-mask {
+.img-mask {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
   top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 
@@ -455,7 +452,7 @@ li {
 }
 
 #skill .rate:before {
-  color: #ddd;
+  color: rgb(163, 159, 159);
 }
 
 #skill .rate:after {
@@ -491,6 +488,10 @@ li {
   opacity: 0.8;
 }
 
+#skill .inner{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px
+}
 /*--------------------------------
  CONTACT
 ---------------------------------*/
@@ -539,6 +540,21 @@ li {
   font-size: 10px;
   text-align: center;
   color: #8c8c8c;
+}
+
+.fixed-bg {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+ 
+.bg01 {
+  background-image: url(../images/bg01.jpg);
+}
+ 
+.bg02 {
+  background-image: url("../img/skill/bg02.jpeg");
 }
 
 /*media Queries 767
@@ -592,7 +608,7 @@ li {
     height: 70vh;
   }
 
-  .hero-mask {
+  .img-mask {
     height: 70vh;
   }
 
