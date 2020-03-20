@@ -305,6 +305,7 @@ li {
 .url-link :hover{
   opacity: 0.8;
   color: rgb(40, 126, 207);
+  font-weight: bold;
 }
 
 
